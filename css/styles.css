@@ -25,6 +25,11 @@
     --third-text-color: #FFFFFF;
     --background-color: #2F303A;
 }
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .body {
 background: var(--third-text-color);
 color: var(--primery-text-color);
@@ -33,14 +38,18 @@ font-family: 'Roboto', sans-serif;
 }
 .list{
     list-style:none;
+    margin: 0;
 }
 .logo {
     /* WebStudio */
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+margin-right: 93px;
     font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        /* identical to box height */
         letter-spacing: 0.03em;
         color: #000000;
 text-decoration: none;
@@ -49,6 +58,9 @@ text-decoration: none;
     color: var(--accent-color);
 }
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primery-text-color);
     font-weight: 500;
         font-size: 14px;
@@ -56,6 +68,14 @@ text-decoration: none;
         letter-spacing: 0.02em;
         text-decoration: none;
 
+}
+.site-nav{
+    display: flex;
+    padding: 0;
+
+}
+.site-nav .item+.item{
+    margin-left: 50px;
 }
 
 .site-nav .link:hover,
@@ -66,6 +86,9 @@ text-decoration: none;
     color: var(--accent-color);
 }
 .link-conection .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--secondary-text-color);
     font-weight: 500;
         font-size: 14px;
@@ -73,11 +96,16 @@ text-decoration: none;
         letter-spacing: 0.02em;
         text-decoration: none;}
 .link-conection { 
-    margin-top: 0;
-        margin-bottom: 0;}
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+}
 .link-conection .link:hover,
 .link-conection .link:focus{
     color: var(--accent-color);
+}
+.link-conection .item+.item{
+    margin-left: 50px;
 }
 /*main*/
 .hero{
@@ -227,6 +255,9 @@ color:var(--primery-text-color);
         line-height: 2;
     letter-spacing: 0.06em;
 }
+.head {
+    display: flex;
+}
 .head-line{
     color: var(--secondary-text-color);
     font-style: normal;
@@ -235,14 +266,12 @@ color:var(--primery-text-color);
         line-height: 1.87;
         letter-spacing: 0.03em
 }
-.container {
-    outline: 2px solid tomato;
-    margin-left: 215px;
-    margin-right: 215px;
-    width: 1200px;
+.container .main {
+    display: flex;
+    align-items: center;
 
 }
-.page-header{
-    border: 1px solid #ECECEC;
-    outline: 2px solid tomato;
+.header{
+border-width: 0px, 0px, 1px, 0px;
+border:  solid #ECECEC;
 }
