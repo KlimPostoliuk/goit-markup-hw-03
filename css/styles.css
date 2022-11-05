@@ -30,6 +30,8 @@
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .body {
 background: var(--third-text-color);
@@ -140,11 +142,12 @@ width: 696px;
         padding: 0;
         clip: rect(0 0 0 0);
         clip-path: inset(50%);
-        margin: -1px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-top: 94px;
+        padding-bottom: 94px;
 }
-.block {
-    background: #F5F4FA;
-}
+
 .title.subject{
     font-weight: 700;
         font-size: 14px;
@@ -160,11 +163,15 @@ color: var(--secondary-text-color);
         letter-spacing: 0.03em;
 }
 .section-title{
+    color: var(--primery-text-color);
     font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        padding: 0px;
 }
 
 .subtitle{
@@ -174,17 +181,22 @@ color: var(--secondary-text-color);
         line-height: 1.18;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-top: 0px;
+        margin-bottom: 0px;
 }
 .caption{
-    font-weight: 500;
-        font-size: 16px;
-        line-height:1.18;
-        text-align: center;
-        letter-spacing: 0.03em;
         color: var(--primery-text-color);
+                font-weight: 700;
+                    font-size: 18px;
+                    line-height: 2;
+                    letter-spacing: 0.06em;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
 }
 .footer{
     background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 
 }
 .subject .link   {
@@ -203,6 +215,8 @@ font-style: normal;
     color: var(--third-text-color);
     text-decoration: none;}
 .logo-footer{
+    display: inline-block;
+    margin-bottom: 20px;
     font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
@@ -210,6 +224,9 @@ font-style: normal;
         letter-spacing: 0.03em;
         color:var(--third-text-color);
         text-decoration: none;
+}
+.footer-subject{
+    margin-bottom: 9px;
 }
 .subject .link{
         font-style: normal;
@@ -260,14 +277,9 @@ color:var(--primery-text-color);
 }
 .content-link{
     text-decoration: none;
+    margin-bottom: 20px;
+}
 
-}
-.caption{
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-    letter-spacing: 0.06em;
-}
 .head {
     display: flex;
 }
@@ -294,5 +306,104 @@ border:  solid #ECECEC;
 }
 .text{
     display: flex;
+    justify-content: space-between;
+    padding: 0px;
     
+}
+.section.about{
+padding-top: 0px;
+
+}
+.benefits{
+    padding: 0px;
+    display: flex;
+    margin-left: auto;
+}
+.benefits .ic+.ic{
+    margin-left: 30px;
+}
+.block{
+    background: #F5F4FA;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 94px;
+}
+.block .item{
+    display: flex;
+    margin-left: auto;
+    padding: 0px;
+}
+.item .foto+.foto{
+    margin-left: 30px;
+}
+.foto{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: var(--third-text-color);
+    box-shadow: 0px 1px 3px;
+    border-radius: 0px 0px 4px 4px;
+}
+.comand{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+/*PORTFOLIO*/
+.section.portfolio{
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.button-nav{
+    display: block;
+    padding: 0px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62px;
+        text-align: center;
+        letter-spacing: 0.03em;
+            color: #212121;
+            border-radius: 4px;
+            margin-bottom: 50px;
+
+}
+.filter{
+    display: inline-flex;
+
+}
+.button-nav .filter+.filter{
+    margin-left: 8px;
+}
+.portfolio .button{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+.content .item{
+    width: calc((100%-60px) /3);
+}
+.content-info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 24px;
+    margin-left: 24px;
+border: 1px solid #EEEEEE;
+    
+}
+.content .caption{
+    margin-bottom: 4px;
+}
+.text-headline{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.87;
+            letter-spacing: 0.03em;
+            color: #757575;
+            margin-top: 0px;
+            margin-bottom: 0px;
 }
